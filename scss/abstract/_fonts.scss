@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+
+.row {
+
+    text-align: center;
+
+    &__profile-name,
+    &__stat-num {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    &__profile-age {
+        font-weight: 400;
+    }
+
+    &__stat-type {
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+}
+
+.attribution {
+    text-align: center;
+}

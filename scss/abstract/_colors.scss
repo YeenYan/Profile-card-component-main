@@ -1,0 +1,34 @@
+$primary-dark-cyan: hsl(185, 75%, 39%);
+$primary-very-dark-blue: hsl(229, 23%, 23%);
+$primary-dark-gray-blue: hsl(227, 10%, 46%);
+$nuetral-dark-gray: hsl(0, 0%, 59%);
+
+
+body {
+    background-color: $primary-dark-cyan;
+}
+
+.card {
+    background-color: #fff;
+}
+
+.row {
+
+
+    &__profile-name,
+    &__stat-num {
+        color: $primary-very-dark-blue;
+    }
+
+    &__profile-age,
+    &__profile-place,
+    &__stat-type {
+        color: $primary-dark-gray-blue;
+    }
+
+}
+
+.line-break {
+    background-color: $nuetral-dark-gray;
+    opacity: .5;
+}
