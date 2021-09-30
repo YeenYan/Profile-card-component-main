@@ -1,0 +1,111 @@
+@use '../abstract/' as a;
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-position-x: -15rem , 50rem;
+    background-position-y: -45rem , 35rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1300px;
+    background-attachment: fixed, fixed;
+}
+
+image {
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    min-width: 290px;
+    max-width: 320px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.row {
+    position: relative;
+
+    &__header-image {
+        position: absolute;
+
+        left: 0;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    &__profile-content {
+        z-index: 0;
+        display: inline-block;
+        position: relative;
+        margin-top: 75px;
+    }
+
+    &__profile-image {
+        z-index: 0;
+        position: relative;
+        border-radius: 100px;
+        border: 5px solid #fff;
+    }
+
+    &__profile-name {
+        margin-top: 1rem;
+    }
+
+    &__profile-place {
+        margin: .3rem 0 1.7rem 0;
+    }
+
+}
+
+.line-break {
+    background-size: cover;
+    background-position: center center;
+    height: 1px;
+    border: none;
+}
+
+.row-col {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 2rem 0;
+}
+
+.row__stat-type {
+    margin-top: .3rem;
+}
+
+.attribution {
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    margin-bottom: 3rem;
+}
+
+
+@media (max-width: 375px){
+
+    body {
+        // background-color: red;
+        background-position-x: -65rem , 10rem;
+        background-position-y: -50rem , 15rem;
+    }
+
+}
+
+@media (max-width: 1440px){
+
+    body {
+        background-position-x: -30rem , 35rem;
+        background-position-y: -45rem , 35rem;
+    }
+}
